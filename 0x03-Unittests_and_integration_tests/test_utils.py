@@ -13,9 +13,7 @@ memoize = __import__('utils').memoize
 
 
 class TestAccessNestedMap(unittest.TestCase):
-    """
-    Class that inherits from unittest.TestCase.
-    """
+    """Tests for the AccessNestedMap class."""
     @parameterized.expand([
         ({"a": 1}, ("a",), 1),
         ({"a": {"b": 2}}, ("a",), {"b": 2}),
